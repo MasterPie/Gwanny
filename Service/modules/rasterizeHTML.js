@@ -6,9 +6,11 @@ module.exports = function(html, clog) {
 		phantom.create(function (ph) {
 			ph.createPage(function (page) {
 			    page.open(html, function (status) {
-			      console.log("opened" + html, status);
+			      console.log("opened " + html, status);
 			      page.render('example.png');
-			      callback(clog);
+			      setInterval(function() {
+				      callback(clog);
+			      }, 200);
 			      ph.exit();
 			    })
 			});
