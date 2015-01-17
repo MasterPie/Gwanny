@@ -15,6 +15,11 @@
     "mongodb": "*",
     "mongoskin": "*",
     "morgan": "~1.5.1",
-    "serve-favicon": "~2.2.0"
+    "serve-favicon": "~2.2.0",
+    "phantom": "latest",
+    "node-promise": "~0.5.11",
+    "q": "latest",
+    "wundernode": "latest",
+    "require.async": "latest"
   }
 }
