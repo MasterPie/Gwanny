@@ -23,6 +23,7 @@
     "require.async": "latest",
     "png-js": "latest",
     "gm": "latest",
+	"request" : "latest",
     "imagemagick": "latest",
     "sprintf-js": "latest",
     "get-pixels": "latest"
