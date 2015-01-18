@@ -21,6 +21,14 @@
     "q": "latest",
     "wundernode": "latest",
     "require.async": "latest",
+<<<<<<< HEAD:Service/package.json
+    "png-js": "latest",
+    "gm": "latest",
+    "imagemagick": "latest",
+    "sprintf-js": "latest",
+    "get-pixels": "latest"
+=======
 	"request" : "latest"
+>>>>>>> 12d61cd157f64f1469700eb1bd8bd8143124a72a:package.json
   }
 }
