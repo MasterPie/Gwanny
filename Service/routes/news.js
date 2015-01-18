@@ -51,10 +51,7 @@ router.get('/', function(req, res, next) {
 			});
 			
 		}
-	});
-
-	//res.render("call_made.html", {});
-	
+	});	
 });
 
 module.exports = router;
