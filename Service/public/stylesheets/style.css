@@ -1,8 +1,194 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+ul,li,h2,p,h4,h3,h5 {
+	margin: 0px;
 }
 
-a {
-  color: #00B7FF;
+.content {
+
+	-webkit-font-smoothing: none;
+	width: 384px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: white; 
+	font-family: sans-serif;
+
+}
+
+.wrapper{
+	margin: 0px auto;
+	width:270;
+}
+
+/****** WEATHER ***********/
+
+#w-image {
+	clear: both;
+	width: 80px;
+	height: 80px;
+	background-color: black;
+	float: left;
+	margin-right: 10px;
+}
+
+
+
+#w-text{
+	with:180px;
+	float: left;
+}
+
+#w-text p{
+	padding-top:  5px;
+}
+
+#weather{
+	font-weight: bold;
+	font-size: 32px;
+}
+/**** REMINDER ***/
+
+.reminder {
+	margin-bottom: 30px;
+}
+
+ul{
+	margin-left: 0px;
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+ul li {
+	margin: 20px 0px;
+}
+
+
+ul li img{
+	padding-right: 10px;
+	float: left;
+}
+
+
+ul li p {
+	 clear: both;
+	 margin-left: 25px;
+	 padding-top: 5px;
+}
+
+
+/****** CONTACT ******/
+
+
+.contact {
+	border-bottom: 1px dotted black;
+	display: inline-block;
+	margin: 15px 0px 0px 0px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.contact img {
+	width: 30px;
+	height:30px;
+	padding:0px;
+	margin-right: 10px;
+	background-color: black;
+}
+
+.contact h4 {
+	margin: 5px 0px;
+	font-weight: normal;
+}
+
+
+.contact h5 {
+	clear: left;
+	margin: 0 0 5px 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+}
+
+
+.contact p {
+	float: left;
+	margin-left: 40px;
+	padding: 0px;
+	font-weight: 200;
+}
+
+
+/****** NEWS ******/
+
+
+.news {
+	display: inline-block;
+	margin: 15px 0px 0px 0px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.news img {
+	width: 35px;
+	height:35px;
+	padding:0px;
+	margin: 0px 10px 9px 0px;
+	background-color: black;
+}
+
+.news h4 {
+	margin: 9px 0px;
+	font-weight: 200;
+}
+
+
+.news h5 {
+	clear: left;
+	margin: 0 0 5px 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: left;
+}
+
+
+.news p {
+	float: left;
+	margin-left: 0px;
+	padding: 0px;
+
+}
+
+
+
+h1 {
+	font-size: 30px;
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+	padding: 30px 0px;	
+}
+
+
+
+h2 {
+	font-size: 32px;
+	font-weight: 200;
+}
+
+h3 {
+
+	font-size: 18px;
+	border-bottom: 1px black dotted;
+}
+
+h4 {
+
+	font-size: 21px;
+	font-weight: 200;
+	float:left;
+}
+
+p {
+	font-size: 18px;
+
 }
