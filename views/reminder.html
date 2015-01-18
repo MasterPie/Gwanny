@@ -1,27 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Reminders</title>
-		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-	</head>
-	<body>
-		<div class="content">
-			<h1>REMINDERS</h1>
-			<% for(var i=0; i<todos.length; i++){ %>
-				<div class="reminder">
-					<h3 class="time"><%= todos[i]["time"] %></h3>
-					<ul>
-						<% for(var j=0; j<todos[i]["items"].length; j++){ %>
-						<li>
-							<img src="images/checkbox.png" alt="checkbox">
-							<h4><%= todos[i]["items"][j]["name"] %></h4>
-							<p><%= todos[i]["items"][j]["description"] %></p>
-						</li>
-						<% } %>
-					</ul>
-				</div>
-			<% } %>
-		</div>			
-	</body>
-</html>
+^L^C REMINDERS ^X
+<% for(var i=0; i<todos.length; i++){ %>
+^I <%= todos[i]["time"] %> ^i <% for(var j=0; j<todos[i]["items"].length; j++){ %>	
+[9
+^B <%= todos[i]["items"][j]["name"] %>
+<%= todos[i]["items"][j]["description"] %>
+<% } %>
+<% } %>
