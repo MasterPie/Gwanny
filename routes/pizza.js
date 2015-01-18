@@ -75,8 +75,8 @@ router.get('/', function(req, res, next) {
 					console.log(body2);
 					
 					var data = {						
-						duration : "60",
-						fee : "5"
+						duration : body["duration"],
+						fee : body2["fee"]
 					};
 					
 					res.render("pizza.html", data);
