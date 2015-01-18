@@ -43,7 +43,7 @@ router.get('/', function(req, res, next) {
 				//duration : body["duration"],
 				//fee : body2["fee"]
 			};
-			
+			res.end(quote);
 			//res.render("pizza.html", data);	
 		}
 	});
