@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
 			
 			console.log(quote);
 				
-			//res.end(quote);
+			res.end(quote);
 			//res.render("pizza.html", data);
 		}
 	});
