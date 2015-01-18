@@ -6,6 +6,7 @@ var request = require('request');
 
 var apikey = "6e17cbd9-cff9-4b60-9bc5-28e85d02037a";
 var baseURL = "https://api.justyo.co/";
+var yo_username = "MASTERPIE";
 
 /* POST make call */
 router.get('/', function(req, res, next) {
@@ -20,7 +21,7 @@ router.get('/', function(req, res, next) {
 					'Content-Type': 'application/json'
 				},
 			form:{
-				username: "MASTERPIE",
+				username: yo_username,
 				api_token: apikey
 			}
 		};
@@ -31,11 +32,19 @@ router.get('/', function(req, res, next) {
 			var quote = body;
 			
 			console.log(quote);
-				
+			console.log(yo_username);
 			res.end(quote);
 			//res.render("pizza.html", data);
 		}
 	});
+});
+
+router.get('/:yoId', function(req, res, next){
+	var new_id = req.params.yoId;
+
+	yo_username = new_id;
+	
+	res.send("");
 });
 
 module.exports = router;

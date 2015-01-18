@@ -1,8 +1,8 @@
-^L^C REMINDERS ^X
+^L^CREMINDERS^X^S
 <% for(var i=0; i<todos.length; i++){ %>
-^D <%= todos[i]["time"] %> <% for(var j=0; j<todos[i]["items"].length; j++){ %>	
+<%= todos[i]["time"] %> <% for(var j=0; j<todos[i]["items"].length; j++){ %>	
 [9
-^B <%= todos[i]["items"][j]["name"] %>
+^B<%= todos[i]["items"][j]["name"] %>^b
 <%= todos[i]["items"][j]["description"] %>
 <% } %>
 <% } %>

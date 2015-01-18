@@ -1,8 +1,8 @@
-^L^C CONTACTS ^X
+^L^CCONTACTS^X^S
 <% for(i=0; i < contacts.length; i++) {%>
 [1
-^D <%= contacts[i]["name"] %>
+<%= contacts[i]["name"] %>
 <%= contacts[i]["relation"] %>
-^B <%= contacts[i]["number"] %>
+^B<%= contacts[i]["number"] %>^b
 <% } %>
 			
