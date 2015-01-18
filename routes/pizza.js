@@ -73,6 +73,13 @@ router.get('/', function(req, res, next) {
 				if (!error2){
 					console.log("statusCode: ", response2.statusCode);
 					console.log(body2);
+					
+					var data = {						
+						duration : "60",
+						fee : "5"
+					};
+					
+					res.render("pizza.html", data);
 				}
 			});
 		}
