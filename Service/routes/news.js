@@ -24,19 +24,32 @@ router.get('/', function(req, res, next) {
 			}
 	};	
 	
+	var options2 = JSON.parse(JSON.stringify(options))
+	options2.url = 'https://' + baseURL +'/content/' + currentName + '/topnews/events';
+	
 	request.get(options, function(error, response, body){
 		if (!error){
 			console.log("statusCode: ", response.statusCode);
 			var newsItems = JSON.parse(body)["results"];
 			
-			var newsEvents = {
-				firstNews : newsItems[0],
-				secondNews :newsItems[1]
-			};
+			request.get(options2, function(error2, response2, body2){
+				if (!error2){
+					var events = JSON.parse(body2)["results"];
+					
+					console.log(events);
+				
+					var newsEvents = {
+						firstNews : newsItems[0],
+						secondNews :newsItems[1],
+						firstEvent : events[0],
+						secondEvent : events[1]
+					};
+					
+					console.log(newsEvents);
+					res.render("news-events.html", newsEvents);
+				}
+			});
 			
-			console.log(newsEvents);
-			
-			res.render("news-events.html", newsEvents);
 		}
 	});
 

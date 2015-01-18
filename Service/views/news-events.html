@@ -15,29 +15,29 @@
 							<img src="images/news.png" alt="" class="">
 							<h4><%= firstNews.title %></h4>
 							<h5><%= firstNews.location_name %></h5>
-							<p><%= firstNews.attributes["comment"] %></p>	
+							<p>"<%= firstNews.attributes["comment"] %>"</p>	
 						</li>
 						<li class="news">
 							<img src="images/news.png" alt="" class="">
 							<h4><%= secondNews.title %></h4>
 							<h5><%= secondNews.location_name %></h5>
-							<p><%= secondNews.attributes["comment"] %></p>	
+							<p>"<%= secondNews.attributes["comment"] %>"</p>	
 						</li>
 				</div>
 				<div class="reminder">
 					<h3 class="time">EVENTS</h3>
 					<ul>
 						<li class="news">
-							<img src="event.png" alt="" class="">
-							<h4>Event title 01</h4>
-							<h5>January 04, 2015 - 2:00 PM</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad eum laborum enim, eveniet ex doloribus.</p>	
+							<img src="images/event.png" alt="" class="">
+							<h4><%= firstEvent.title %></h4>
+							<h5><%= firstEvent.item_date %></h5>
+							<p>"<%= firstEvent.attributes["description"] %>"</p>	
 						</li>
 						<li class="news">
-							<img src="event.png" alt="" class="">
-							<h4>Event title 01</h4>
-							<h5>January 04, 2015 - 2:00 PM</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad eum laborum enim, eveniet ex doloribus.</p>	
+							<img src="images/event.png" alt="" class="">
+							<h4><%= secondEvent.title %></h4>
+							<h5><%= secondEvent.item_date %></h5>
+							<p>"<%= secondEvent.attributes["description"] %>"</p>	
 						</li>
 					</ul>
 				</div>
