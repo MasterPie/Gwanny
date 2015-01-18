@@ -20,6 +20,11 @@
     "node-promise": "~0.5.11",
     "q": "latest",
     "wundernode": "latest",
-    "require.async": "latest"
+    "require.async": "latest",
+    "png-js": "latest",
+    "gm": "latest",
+    "imagemagick": "latest",
+    "sprintf-js": "latest",
+    "get-pixels": "latest"
   }
 }
