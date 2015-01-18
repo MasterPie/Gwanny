@@ -15,6 +15,10 @@ var calls = require('./routes/calls');
 var weather = require('./routes/weather');
 var emergency_sms = require('./routes/emergency_sms');
 var reminder = require('./routes/reminder');
+var news = require('./routes/news');
+var contacts = require('./routes/contacts');
+var pizza = require('./routes/pizza');
+var yo = require('./routes/yo');
 
 /* ---- */
 
@@ -39,6 +43,10 @@ app.use('/calls', calls);
 app.use('/weather', weather);
 app.use('/emergency', emergency_sms);
 app.use('/reminder', reminder);
+app.use('/news', news);
+app.use('/contacts', contacts);
+app.use('/pizza', pizza);
+app.use('/yo', yo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

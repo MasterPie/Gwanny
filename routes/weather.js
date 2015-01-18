@@ -20,16 +20,26 @@ router.get('/', function(req, res, next) {
 	
 	wunder.forecast(query, function(err, obj){
 		var response = JSON.parse(obj);
+		//console.log( response["forecast"]);
 		var today = response["forecast"]["simpleforecast"]["forecastday"][0];
+		//console.log(today);
 		
-		var forecast = {
-			"low" : today["low"],
-			"high" : today["high"],
-			"conditions" : today["conditions"]
-		};
+		wunder.conditions(query, function(err2, obj2){
+			var response2 = JSON.parse(obj2);
 	
-		 //console.log(response);
-		res.render("forecast.html", forecast);
+		var todayConditions = response2["current_observation"];
+	console.log(todayConditions);
+			var forecast = {
+				"low" : today["low"],
+				"high" : today["high"],
+				"current" : todayConditions["temp_f"],
+				"conditions" : today["conditions"]
+			};
+		
+			 //console.log(response);
+			res.render("weather.html", forecast);
+			
+		});
 	});	
 });
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Reminders</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>
+	<body>
+		<div class="content">
+			<h1>REMINDERS</h1>
+				<div class="reminder">
+					<h3 class="time">NEWS</h3>
+					<ul>
+						<li class="news">
+							<img src="images/news.png" alt="" class="">
+							<h4><%= firstNews.title %></h4>
+							<h5><%= firstNews.location_name %></h5>
+							<p>"<%= firstNews.attributes["comment"] %>"</p>	
+						</li>
+						<li class="news">
+							<img src="images/news.png" alt="" class="">
+							<h4><%= secondNews.title %></h4>
+							<h5><%= secondNews.location_name %></h5>
+							<p>"<%= secondNews.attributes["comment"] %>"</p>	
+						</li>
+				</div>
+				<div class="reminder">
+					<h3 class="time">EVENTS</h3>
+					<ul>
+						<li class="news">
+							<img src="images/event.png" alt="" class="">
+							<h4><%= firstEvent.title %></h4>
+							<h5><%= firstEvent.item_date %></h5>
+							<p>"<%= firstEvent.attributes["description"] %>"</p>	
+						</li>
+						<li class="news">
+							<img src="images/event.png" alt="" class="">
+							<h4><%= secondEvent.title %></h4>
+							<h5><%= secondEvent.item_date %></h5>
+							<p>"<%= secondEvent.attributes["description"] %>"</p>	
+						</li>
+					</ul>
+				</div>
+		</div>			
+	</body>
+</html>
